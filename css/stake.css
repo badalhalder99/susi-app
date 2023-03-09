@@ -1,0 +1,439 @@
+/*....................................................................
+		File Name: style.css
+.....................................................................*/
+
+/*--------------------------------------------------------------
+				***General***
+--------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: none !important;
+	box-sizing: border-box;
+	
+}
+html,
+body {
+	background: #0D0415;
+	color: #000;
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: normal;
+	overflow-x: inherit;
+}
+a {
+	color: #18d26e;
+	text-decoration: none !important;
+	outline: none !important;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;	
+}
+a:hover,
+a:active,
+a:focus {
+  color: #18d36e;
+  outline: none;
+  text-decoration: none;
+}
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+/*....................................................................
+		***Menu start***
+.....................................................................*/
+.navbar{
+	padding: 5px 1rem;
+	border-bottom: .5px solid #dddddd52;
+}
+.topNavbar:before{
+	content: none;
+}
+.topNavbar:after{
+	content: none;
+}
+.navbar .nav-container{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.navbar .navbar-nav .nav-item{
+	padding: 5px 3px;
+	position: relative;
+}
+.navbar .navbar-nav .nav-item:last-child{
+	padding-right: 0;
+}
+.navbar .navbar-nav .nav-item ul{
+	list-style: none;
+    background: #fff;
+    width: 200px;
+    margin-top: 9px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.navbar .navbar-nav .nav-item ul li{
+	padding: 10px 20px;
+}
+.navbar .navbar-nav .nav-item ul li a{ 
+	color: #000;
+	font-size: 16px;
+	font-weight: 550;
+}
+.navbar .navbar-nav .nav-item .nav-link.active{
+	color:#fff;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+	margin-left: 7px;
+    font-size: 15px;
+    font-weight: regular;
+	color: #ddd;
+}
+.navbar .navbar-nav .nav-item:hover .nav-link{
+	color: #fff;
+}
+.navbar .navbar-brand h2{
+    font-size: 40px;
+    font-weight: 550;
+    margin-top: 4px;
+    margin-bottom: 7px;
+    font-weight: 800;
+	color: #000a2d;
+    font-family: Times New Roman;
+    text-shadow: 1px 3px 2px rgba(0,0,0,0.2);
+}
+.navbar .navbar-brand h2 span{
+	margin: 0;
+	padding: 0;
+	margin-right: -9px;
+}
+.navbar {
+    padding: 1px 1rem;
+}
+.navbar button i{
+    font-size: 13px;
+}
+.navbar .read-more{
+	color: #fff;
+    background: #FF3D4E;
+    border-color: #FF3D4E;
+    border-radius: 56px;
+    padding: 9px 25px;
+}
+.navbar .navbar_bar{
+	color: #FF3D4E;
+    background: #fffbf0;
+    font-size: 14px;
+    padding: 14px;
+    border-radius: 50%;
+}
+.navbar .nav_right a{
+	color: #fff;
+    padding: 10px 19px;
+    font-size: 15px;
+	background-color: #d8d0d012;
+}
+.navbar .nav_right a:hover{ 
+	color: #fff;
+	background-color: #d8d0d048;
+	color: #d8d0d0;
+    padding: 10px 19px;
+    font-size: 15px;
+}
+.navbar .nodeWrap a{
+	color: #fff;
+    padding: 10px 19px;
+    font-size: 15px;
+	background-color: #d8d0d012;
+}
+.navbar .nodeWrap a:hover{ 
+	color: #fff;
+	background-color: #d8d0d048;
+	color: #d8d0d0;
+    padding: 10px 19px;
+    font-size: 15px;
+}
+.angledown{
+	color: #fff;
+}
+.flag{
+	width: 27px;
+}
+.lastButton button i{
+	color: #ffffffc2;
+}
+.lastButton button i:hover{
+	color: #fff;
+}
+.navbar .togler_icon i {
+    font-size: 20px;
+    color: white;
+}
+.topNavRight{
+	background:red;
+	left: -85px;
+	top: 47px;
+	background:#161522;
+}
+.topNavRight a{
+	color: #ddd;
+}
+.topNavRight a:hover{
+	color: white;
+	background: #202231;
+}
+.languageDropdown a{
+    padding: 10px 21px;
+	color: #ddd;
+	border-radius: 10px;
+}
+.languageDropdown a:hover{
+	background:#2E3348;
+	color: white;
+}
+.languageDropdown{
+	background: #202231;
+}
+.modal-body{
+	
+}
+.modal-body ul{
+	list-style: none;
+	text-align: center;
+}
+.modal-body ul li {
+	padding: 9px;
+    background: #2E3348;
+    margin-bottom: 15px;
+    border-radius: 38px;
+}
+.modal-body ul li a{
+	color: white;
+}
+
+/*.............................................***fixed bottom section***...........................*/
+.fixed-bottom{
+	background: #0D0415;
+	padding: 9px 0px;
+}
+.connect{
+	color: #fff;
+    padding: 10px 19px;
+    font-size: 15px;
+	background-color: #d8d0d012;
+}
+.connect:hover{ 
+	color: #fff;
+	background-color: #d8d0d048;
+    padding: 10px 19px;
+    font-size: 15px;
+}
+.lastButton2 button i{
+	color: #ffffffc2;
+}
+.lastButton2 button i:hover{
+	color: #fff;
+}
+
+
+
+/*.............................................***pool content section***...........................*/
+.leftContentWrap{
+	margin-top: 50px;
+}
+.leftContentWrap h3{
+	color: #cecece;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.leftContentWrap p{
+	font-size: 16px;
+    color: #6b7280;
+    line-height: 24px;
+}
+.rightContentWrap{
+	margin-top: 39px;
+}
+/*...................second row style...................*/
+.aprwrap{
+	background: #6E5636;
+	padding: 18px;
+	border-radius: 12px;
+}
+
+.topContent h4{
+	float: left;
+    color: #ffffffd4;
+    font-size: 19px;
+    font-weight: bold;
+}
+.topContent h2{
+	float: right;
+    color: #ffffffd4;
+    font-weight: bold;
+}
+.bottomContent a{
+	float: left;
+    background: #f1c461cc;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-top: -9px;
+}
+.bottomContent a:hover{
+	background: #F1C461;
+}
+.bottomContent p{
+	float: right;
+    color: #ffffffbf;
+    margin-bottom: 10px;
+}
+.stakeWrap{
+	background: #161522;
+	padding: 18px;
+	border-radius: 12px;
+	padding-bottom: 30px;
+}
+.stakeWrap .first_item{
+	width: 49%;
+}
+.stakeWrap .second_item{
+	width: 49%;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	color: #fff;
+    background-color: #202231;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+.nav>li>a{
+	color: #fff;
+    background-color: #161522;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: #eeeeeecf;
+}
+.topTapContentWrap{
+	margin-top: 32px;
+}
+.topTapContentWrap h3{
+	float: left;
+    font-weight: bold;
+    color: #ffffffdb;
+    font-size: 23px;
+}
+.topTapContentWrap h4{
+	float: right;
+    color: #ffffffc2;
+    font-size: 15px;
+    background: #4e3034;
+    padding: 4px;
+    border-radius: 17px;
+    border: 1px solid #FE9A6B;
+}
+.middleTapContent{
+	position: relative;
+}
+.middleTapContent input{
+	color: #202231;
+    margin-top: 6px;
+    background: #202231;
+    padding: 26px 10px;
+    border-radius: 35px;
+    font-size: 18px;
+    font-weight: bold;
+	border: 2px solid #202231;
+}
+.middleTapContent h5{
+	position: absolute;
+    top: 11px;
+    right: 8px;
+    margin-bottom: 0px;
+    color: #ffffffb5;
+}
+.middleTapContent h5 a{
+	color: #020cefdb;
+    border: 1px solid #1a21befc;
+    border-radius: 35px;
+    background: #164f7bba;
+}
+.bottomSelectButton a{
+	background: #2E3348;
+    display: block;
+    margin-top: 19px;
+    color: #ffffffc2;
+    font-size: 15px;
+    padding: 16px 0px;
+    border-radius: 10px;
+}
+.bottomSelectButton a:hover{
+	background: #1b8de3d1;
+    display: block;
+    margin-top: 19px;
+    color: #fff;
+    font-size: 15px;
+    padding: 16px 0px;
+    border-radius: 10px;
+}
+/*........right content..............*/
+.HeadingWrap{
+	background: #161522;
+	padding: 15px;
+	padding-left: 20px;
+	border-radius: 12px;
+}
+.topHeading h3{
+	color: #ffffffde;
+    font-weight: bold;
+}
+.middleHeadingWrap a img{
+	border-radius: 12px;
+}
+.middleHeadingWrap span{
+	color: #ffffffd4;
+    font-size: 16px;
+}
+.elementsWrap{
+	margin-bottom: 60px;
+}
+
+
+
+/*.............................................***footer section***...........................*/
+
+footer .button-wrap a{
+	color: #ffffffa8;
+	font-size: 15px;
+}
+footer .button-wrap a:hover{
+	color: white;
+	font-size: 15px;
+}
+footer{
+	margin-top: 23px;
+}
+
+
+
+
+/*.............................................***Here end style.css file***...........................*/ 
