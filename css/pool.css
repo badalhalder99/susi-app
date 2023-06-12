@@ -1,0 +1,693 @@
+/*....................................................................
+		File Name: pool.css
+.....................................................................*/
+
+/*--------------------------------------------------------------
+				***General***
+--------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: none !important;
+	box-sizing: border-box;
+	
+}
+html,
+body {
+	background: #0D0415;
+	color: #000;
+	font-family: 'Rubik', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: normal;
+	overflow-x: inherit;
+}
+a {
+	color: #18d26e;
+	text-decoration: none !important;
+	outline: none !important;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;	
+}
+a:hover,
+a:active,
+a:focus {
+  color: #18d36e;
+  outline: none;
+  text-decoration: none;
+}
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+/*....................................................................
+		***Menu start***
+.....................................................................*/
+.navbar{
+	padding: 5px 1rem;
+	border-bottom: .5px solid #dddddd52;
+}
+.topNavbar:before{
+	content: none;
+}
+.topNavbar:after{
+	content: none;
+}
+.navbar .nav-container{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.navbar .navbar-nav .nav-item{
+	padding: 5px 3px;
+	position: relative;
+}
+.navbar .navbar-nav .nav-item:last-child{
+	padding-right: 0;
+}
+.navbar .navbar-nav .nav-item ul{
+	list-style: none;
+    background: #fff;
+    width: 200px;
+    margin-top: 9px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.navbar .navbar-nav .nav-item ul li{
+	padding: 10px 20px;
+}
+.navbar .navbar-nav .nav-item ul li a{ 
+	color: #000;
+	font-size: 16px;
+	font-weight: 550;
+}
+.navbar .navbar-nav .nav-item .nav-link.active{
+	color:#fff;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+	margin-left: 7px;
+    font-size: 15px;
+    font-weight: regular;
+	color: #ddd;
+}
+.navbar .navbar-nav .nav-item:hover .nav-link{
+	color: #fff;
+}
+.navbar .navbar-brand h2{
+    font-size: 40px;
+    font-weight: 550;
+    margin-top: 4px;
+    margin-bottom: 7px;
+    font-weight: 800;
+	color: #000a2d;
+    font-family: Times New Roman;
+    text-shadow: 1px 3px 2px rgba(0,0,0,0.2);
+}
+.navbar .navbar-brand h2 span{
+	margin: 0;
+	padding: 0;
+	margin-right: -9px;
+}
+.navbar {
+    padding: 1px 1rem;
+}
+.navbar button i{
+    font-size: 13px;
+}
+.navbar .read-more{
+	color: #fff;
+    background: #FF3D4E;
+    border-color: #FF3D4E;
+    border-radius: 56px;
+    padding: 9px 25px;
+}
+.navbar .navbar_bar{
+	color: #FF3D4E;
+    background: #fffbf0;
+    font-size: 14px;
+    padding: 14px;
+    border-radius: 50%;
+}
+.navbar .nav_right a{
+	color: #fff;
+    padding: 10px 19px;
+    font-size: 15px;
+	background-color: #d8d0d012;
+}
+.navbar .nav_right a:hover{ 
+	color: #fff;
+	background-color: #d8d0d048;
+	color: #d8d0d0;
+    padding: 10px 19px;
+    font-size: 15px;
+}
+.navbar .nodeWrap a{
+	color: #fff;
+    padding: 10px 19px;
+    font-size: 15px;
+	background-color: #d8d0d012;
+}
+.navbar .nodeWrap a:hover{ 
+	color: #fff;
+	background-color: #d8d0d048;
+	color: #d8d0d0;
+    padding: 10px 19px;
+    font-size: 15px;
+}
+.angledown{
+	color: #fff;
+}
+.flag{
+	width: 27px;
+}
+.lastButton button i{
+	color: #ffffffc2;
+}
+.lastButton button i:hover{
+	color: #fff;
+}
+.navbar .togler_icon i {
+    font-size: 20px;
+    color: white;
+}
+.topNavRight{
+	background:red;
+	left: -85px;
+	top: 47px;
+	background:#161522;
+}
+.topNavRight a{
+	color: #ddd;
+}
+.topNavRight a:hover{
+	color: white;
+	background: #202231;
+}
+.languageDropdown a{
+    padding: 10px 21px;
+	color: #ddd;
+	border-radius: 10px;
+}
+.languageDropdown a:hover{
+	background:#2E3348;
+	color: white;
+}
+.languageDropdown{
+	background: #202231;
+}
+.modal-body{
+	
+}
+.modal-body ul{
+	list-style: none;
+	text-align: center;
+}
+.modal-body ul li {
+	padding: 9px;
+    background: #2E3348;
+    margin-bottom: 15px;
+    border-radius: 38px;
+}
+.modal-body ul li a{
+	color: white;
+}
+
+/*.............................................***fixed bottom section***...........................*/
+.fixed-bottom{
+	background: #0D0415;
+	padding: 9px 0px;
+}
+.connect{
+	color: #fff;
+    padding: 10px 19px;
+    font-size: 15px;
+	background-color: #d8d0d012;
+}
+.connect:hover{ 
+	color: #fff;
+	background-color: #d8d0d048;
+    padding: 10px 19px;
+    font-size: 15px;
+}
+.lastButton2 button i{
+	color: #ffffffc2;
+}
+.lastButton2 button i:hover{
+	color: #fff;
+}
+
+
+
+/*.............................................***content section***...........................*/
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+	color: #fff;
+}
+
+.content-wrap{
+	background:#161522;
+	margin-top: 60px;
+	padding: 23px;
+	border-radius: 10px;
+	position: relative;
+}
+.right_button2{
+	position: absolute;
+	top: 30px;
+	right: 31px;
+}
+.right_button2 a i{
+	color: #ffffffcc;
+    font-size: 18px;
+}
+.right_button2 a:hover i{
+	color: white;
+}
+.right_button3{
+	position: absolute;
+	top: 30px;
+	right: 80px;
+}
+.right_button3 a{
+	color: #12e10c;
+	font-size: 17px;
+	margin-left: 18px;
+}
+.right_button3 a:hover{
+	color: #00ff11b3;
+}
+.right_button3 a i{
+	color: #12e10c;
+	font-size: 15px;
+}
+.content-wrap .nav-pills{
+	background:#202231;
+	padding:5px;
+	border-radius: 5px;
+}
+.content-wrap .nav-pills li.active a{
+	padding:8px 26px;
+	background-image: linear-gradient(to right, #3494E6 0%, #EC6EAD  51%, #3494E6  100%);
+	color: white;
+	font-size: 15px;
+}
+.content-wrap .nav-pills li a{
+	padding:8px 26px;
+	color:#ddddddb8;
+	margin-right :5px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+	color: #fff;
+}
+.first-tab-first-row{
+	margin-top: 25px;
+    border-radius: 5px;
+    background: #202231;
+    padding: 20px 11px;
+}
+.first-tab-first-row img{
+	float: left;
+    width: 8%;
+    border-radius: 12px;
+	margin-right: 13px;
+}
+.first-tab-first-row h3{
+	float: left;
+    color: #ffffffc4;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 23px;
+    margin-right: 79px;
+    margin-left: 5px;
+}
+.first-tab-first-row h3 i{
+	font-size: 14px;
+	color: #e3d9d9;
+}
+.first-tab-first-row form input{
+	float: left;
+    background: #161522;
+    padding: 15px 24px;
+    font-size: 22px;
+    border: 0px;
+    border-radius: 7px;
+	width: 50%:
+}
+.firstrowmiddle a i{
+	color: #ffffffbf;
+    width: 65px;
+    height: 65px;
+    background: #202231;
+    text-align: center;
+    padding-top: 16px;
+    border-radius: 65px;
+    font-size: 24px;
+    border: 3px solid #000000b8;
+    margin-top: 0px;
+}
+.firstrowmiddle{
+	margin-top: -4px;
+    margin-bottom: -12px;
+}
+.thirdRow{
+	margin-top: -14px;
+}
+.thirdRow a{
+	float: left;
+}
+.select-button{
+	color: #ffffff99;
+    margin-right: 39px;
+    border: 1px solid #ffffff54;
+    border-radius: 38px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.select-button:hover{
+	color: #000;
+    background: #ddd;
+	transition: 1s ease;
+}
+.bottomSelectButton a{
+	background: #104872;
+    display: block;
+    margin-top: 19px;
+    color: #1558e7;
+    font-size: 15px;
+    padding: 16px 0px;
+    border-radius: 10px;
+}
+.bottomSelectButton a:hover{
+	background: #1b8de3d1;
+    display: block;
+    margin-top: 19px;
+    color: #fff;
+    font-size: 15px;
+    padding: 16px 0px;
+    border-radius: 10px;
+}
+/*......top-content............*/
+.top-content{
+	margin-top: 35px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 14px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4B5563;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #4B5563;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 48px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.firstItem{
+	color: #ffffffde;
+    font-weight: bold;
+    font-size: 14px;
+}
+.secondItem{
+	color: #7F7F7F;
+    font-weight: bold;
+    font-size: 14px;
+}
+.thirdItem{
+	color: #ffffffde;
+    font-size: 14px;
+}
+.list-inline-item:not(:last-child) {
+    margin-right: 0px;
+}
+.pay-btn{
+	position: relative;
+}
+.payLink{
+	position: absolute;
+    left: 70px;
+    top: 3px;
+    font-size: 12px;
+}
+.payBottom{
+	background: #2e3348;
+    padding: 8px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.payBottom p{
+	color: #ffffffc2;
+}
+.payBottom p span{
+	color: #dfd6d6c2;
+}
+.payElement{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.expiration-wrap{
+	position: relative;
+}
+.expiration-wrap{
+	padding: 28px 0px;
+}
+.dropdownButton{
+	position: absolute;
+	right:5px;
+	top: 20px;
+	bottom: 0px;
+}
+.order{
+	position: absolute;
+    right: 94px;
+    top: 28px;
+    bottom: 0px;
+}
+.order span{
+	color: #d2caca;
+    font-size: 15px;
+}
+.firstBtn{
+	background: transparent;
+    border: 1px solid #74616169;
+    color: #ffffffbf;
+}
+.dropdownMenu {
+	background: #202231;
+	color: #fff;
+}
+.dropdownMenu a{
+	color: #ffffffbf;
+}
+.bottomSelectButton1{
+	background: #e335b7cf;
+    display: block;
+    margin-top: 19px;
+    color: #fff;
+    font-size: 16px;
+    padding: 13px 0px;
+    border-radius: 10px;
+	text-align: center;
+}
+.bottomSelectButton1 a{
+    color: #fff;
+}
+.bottomSelectButton1:hover{
+	background: #e335b7;
+	transition: 1s ease;
+}
+/*.................pool section start..........................*/
+.topButtonWrap{
+	margin-top: 65px;
+	padding-left: 15px;
+}
+.topButtonWrap a{
+	font-size: 15px;
+    color: #ffffffc7;
+}
+.topButtonWrap a i{
+	font-size: 14px;
+    color: #ffffffc7;
+}
+.topButtonWrap h2{
+	margin-top: 22px;
+    color: #ffffffe0;
+	font-size: 29px;
+}
+.paragraphWrap{
+	background: #2B143D;
+    padding: 15px;
+    border-radius: 12px;
+	margin-top: 30px;
+	position: relative;
+}
+.paragraphWrap .closeDiv{
+	position: absolute;
+    top: 10px;
+    right: 13px;
+}
+.paragraphWrap h3{
+	color: #ffffffe0;
+	margin-bottom: 14px;
+}
+.paragraphWrap p{
+	color: #ffffffe0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+.closeDiv button span i{
+	color: white;
+}
+.bottomWrap{
+	background: #161522;
+    padding: 18px;
+    border-radius: 12px;
+    padding-left: 15px;
+    padding-top: 1px;
+	margin-bottom: 30px;
+}
+.buttonThree{
+	margin-top: 18px;
+}
+.buttonThree a.btn1{
+	background: #dc3545;
+    padding: 14px 87px;
+    color: #ffffffd9;
+    margin-right: 5px;
+    margin-bottom: 10px; 
+	border-radius: 10px;
+	font-size: 16px;
+	width: 32%;
+	
+}
+.buttonThree a.btn1:hover{
+	background: #dc3545db;
+    color: #fff; 
+	transition: all 1s ease;
+}
+
+.buttonThree a.btn2{
+	background: #2e3348c2;
+    padding: 14px 87px;
+    color: #ffffffd9;
+    margin-right: 5px;
+    margin-bottom: 10px;
+	border-radius: 10px;
+	font-size: 16px;
+	width: 32%;
+}
+.buttonThree a.btn2:hover{
+	background: #2E3348;
+    color: #fff; 
+	transition: all 1s ease;
+}
+.buttonThree a.btn3{
+	background: #2e3348c2;
+    padding: 14px 87px;
+    color: #ffffffd9;
+    margin-bottom: 10px;
+	margin-right: 5px;
+	border-radius: 10px;
+	font-size: 16px;
+	width: 32%;
+}
+.buttonThree a.btn3:hover{
+	background: #2E3348;
+    color: #fff; 
+	transition: all 1s ease;
+}
+
+
+
+
+
+
+/*.............................................***footer section***...........................*/
+
+footer .button-wrap a{
+	color: #ffffffa8;
+	font-size: 15px;
+}
+footer .button-wrap a:hover{
+	color: white;
+	font-size: 15px;
+}
+footer{
+	margin-top: 23px;
+}
+.fixed-bottom1{
+	position: fixed;
+	bottom:0;
+	left: 0;
+	right:0;
+}
+
+
+
+/*.............................................***Here end pool.css file***...........................*/ 

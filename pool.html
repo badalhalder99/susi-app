@@ -1,0 +1,237 @@
+<!--.....................................................
+		File Name: pool.html
+...................................................... -->
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<!-- basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!--Moble meta-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<title>Susi App</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<!--load google font -->
+		<link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap" rel="stylesheet">
+		
+		<!--load font aweresome icon all styles -->
+		<link href="css/all.css" rel="stylesheet"> 
+		
+		<!-- site icons -->
+		<link rel="icon" href="img/favicon.png" type="" />
+		
+		<!--bootstrap css-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<!-- Site css -->
+		<link rel="stylesheet" href="css/pool.css" />
+		<!-- responsive css -->
+		<link rel="stylesheet" href="css/responsive.css" />
+		
+	</head>
+	<body>
+		<!-- Menu start -->
+		<header>
+			<nav class="navbar navbar-expand-md">
+				<div class="container-fluid nav-container topNavbar">
+					<a href="#" class="navbar-brand">
+						<img src="img/mainLogo.png" alt="" class="img-fluid"/>
+					</a>
+					<button type="button" class="navbar-toggler togler_icon" data-target="#demo1" data-toggle="collapse"><i class="fas fa-bars"></i></button>
+					<div class="collapse navbar-collapse justify-content-left" id="demo1">
+						<ul class="navbar-nav"">
+							<li class="nav-item"><a href="index.html" class="nav-link active">Swap</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Pool</a></li>
+							<li class="nav-item"><a href="migrate.html" class="nav-link">Migrate</a></li>
+							<li class="nav-item"><a href="farm.html" class="nav-link">Farm</a></li>
+							<li class="nav-item"><a href="lend.html" class="nav-link">Lend</a></li>
+							<li class="nav-item"><a href="borrow.html" class="nav-link">Borrow</a></li>
+							<li class="nav-item"><a href="stake.html" class="nav-link">Stake</a></li>
+						</ul>
+						<div class="nodeWrap mr-2 menu-node-wrap2">
+							<a href="#" class="btn mb-3">Changes Nodes</a>
+						</div>
+					</div>
+					<div class="nodeWrap node-wrap2 mr-2">
+						<a href="#" class="btn">Changes Nodes</a>
+					</div>
+					<div class="nav_right">
+						<a href="" class="btn" data-toggle="modal" data-target="#exampleModal">Connect to a wallet</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+							    <div class="modal-header">
+									<h3 class="modal-title" id="exampleModalLabel">Select a Wallet</h3>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+							    </div>
+							    <div class="modal-body">
+									<ul >
+										<li><a href="#">Install Metamask <img src="img/1.png" alt=""class="ml-4" /></a></li>
+										<li><a href="#">Lattice <img src="img/3.png" alt=""class="ml-4" /></a></li>
+										<li><a href="#">Coinbase Wallet <img src="img/4.png" alt=""class="ml-4" /></a></li>
+										<li><a href="#">Fortmatic <img src="img/5.png" alt=""class="ml-4" /></a></li>
+										<li><a href="#">Portic <img src="img/6.png" alt=""class="ml-4" /></a></li>
+									</ul>
+							    </div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary">New to Ethereum?</button>
+									<button type="button" class="btn btn-primary">Learn more about wallets</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+					
+					<div class="dropdown lastButton">
+						<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+							<i class="fas fa-ellipsis-h"></i>
+						</button>
+						<div class="dropdown-menu topNavRight languageDropdown">
+							<a class="dropdown-item" href="#">Docs</a>
+							<a class="dropdown-item" href="#">Dev</a>
+							<a class="dropdown-item" href="#">Open Source</a>
+							<a class="dropdown-item" href="#">Tools</a>
+							<a class="dropdown-item" href="#">Discord </a>
+							<a class="dropdown-item" href="#">Vesting</a>
+						</div>
+					</div>
+					
+				</div>
+			</nav>
+		</header>	
+		<!-- Menu end -->
+		<!-- mobile Menu start -->
+		<div class="fixed-bottom">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="nav_right2 float-left">
+							<a href="" class="btn connect"data-toggle="modal" data-target="#exampleModal" >Connect to a wallet</a>
+						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h3 class="modal-title" id="exampleModalLabel">Select a Wallet</h3>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<ul >
+											<li><a href="#">Install Metamask <img src="img/1.png" alt=""class="ml-4" /></a></li>
+											<li><a href="#">Lattice <img src="img/3.png" alt=""class="ml-4" /></a></li>
+											<li><a href="#">Coinbase Wallet <img src="img/4.png" alt=""class="ml-4" /></a></li>
+											<li><a href="#">Fortmatic <img src="img/5.png" alt=""class="ml-4" /></a></li>
+											<li><a href="#">Portic <img src="img/6.png" alt=""class="ml-4" /></a></li>
+										</ul>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary">New to Ethereum?</button>
+										<button type="button" class="btn btn-primary">Learn more about wallets</button>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="dropdown lastButton2 float-right">
+							<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+								<i class="fas fa-ellipsis-h"></i>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Docs</a>
+								<a class="dropdown-item" href="#">Dev</a>
+								<a class="dropdown-item" href="#">Open Source</a>
+								<a class="dropdown-item" href="#">Tools</a>
+								<a class="dropdown-item" href="#">Discord </a>
+								<a class="dropdown-item" href="#">Vesting</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- mobile  Menu end -->
+		<!-- section start -->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<div class="topButtonWrap">
+							<a href="index.html" ><i class="fas fa-chevron-left mr-2"></i>Go Back</a>
+							<h2>My Liquidity Positions</h2>
+						</div>
+						<div class="paragraphWrap alert" role="alert">
+							<h3>Liquidity Provider Rewards</h3>
+							<p>Liquidity providers earn a 0.25% fee on all trades proportional to their share of the pool. Fees are added to the pool, accrue in real time and can be claimed by withdrawing your liquidity.</p>
+							<div class="closeDiv">
+								<button type="button" class="close closeButton" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true"><i class="fas fa-times"></i></span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+						<div class="bottomWrap">
+							<div class="bottomSelectButton">
+								<a href="#" class="btn" data-toggle="modal" data-target="#exampleModal">Connect to a wallet</a>
+							</div>
+							<div class="buttonThree">
+								<a href="index.html" class="btn btn1">Add</a>
+								<a href="#" class="btn btn2">Import</a>
+								<a href="migrate.html" class="btn btn3">Migrate</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</section>
+		<!-- section End -->
+					
+		<!-- footer  section start -->
+		<footer class="fixed-bottom1">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="button-wrap">
+							<a href="#" class="btn float-left">Analytics</a>
+							<a href="#" class="btn float-right">12887272</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer  section end -->	
+		<!-- JS, Popper.js, and jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		
+		
+		
+	</body>
+</html>
+<!--...................End Here pool.html File......... -->

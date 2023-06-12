@@ -1,0 +1,611 @@
+/*....................................................................
+		File Name: responsive.css
+.....................................................................*/
+
+/*......................................................................................
+		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+..........................................................................................*/
+.nav_right {
+  display: block;
+}
+.selectLanguages {
+  display: block;
+}
+.lastButton {
+  display: block;
+}
+.fixed-bottom {
+  display: none;
+}
+.topTapContentWrap h3 {
+  float: left;
+  font-weight: bold;
+  color: #ffffffdb;
+  font-size: 23px;
+}
+.topTapContentWrap h4 {
+  float: right;
+  color: #ffffffc2;
+  font-size: 15px;
+  background: #4e3034;
+  padding: 4px;
+  border-radius: 17px;
+  border: 1px solid #fe9a6b;
+}
+.menu-node-wrap2 {
+  display: none;
+}
+.node-wrap2,
+.menu-node-wrap2 a {
+  border-radius: 38px;
+}
+/*......................................................................................
+		personal Layout
+		Gutters: 24px.
+		Outer margins: 48px.
+..........................................................................................*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .nav_right {
+    display: block;
+  }
+  .selectLanguages {
+    display: block;
+  }
+  .lastButton {
+    display: block;
+  }
+  .fixed-bottom {
+    display: none;
+  }
+  .topTapContentWrap h3 {
+    float: left;
+    font-weight: bold;
+    color: #ffffffdb;
+    font-size: 23px;
+  }
+  .topTapContentWrap h4 {
+    float: right;
+    color: #ffffffc2;
+    font-size: 15px;
+    background: #4e3034;
+    padding: 4px;
+    border-radius: 17px;
+    border: 1px solid #fe9a6b;
+  }
+  .menu-node-wrap2 {
+    display: none;
+  }
+}
+/*.................................................................................................
+	Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+......................................................................................................*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nav_right {
+    display: none;
+  }
+  .selectLanguages {
+    display: none;
+  }
+  .lastButton {
+    display: none;
+  }
+  .fixed-bottom {
+    display: block;
+  }
+  .first-tab-first-row h3 {
+    margin-top: 2px;
+  }
+  .select-button {
+    margin-top: 2px;
+  }
+  .payLink {
+    position: absolute;
+    left: 70px;
+    top: 1px;
+    font-size: 12px;
+  }
+  .buttonThree a.btn1 {
+    width: 100%;
+  }
+  .buttonThree a.btn2 {
+    width: 100%;
+  }
+  .buttonThree a.btn3 {
+    width: 100%;
+  }
+  .topTapContentWrap h3 {
+    float: none;
+  }
+  .topTapContentWrap h4 {
+    float: none;
+  }
+  .menu-node-wrap2 {
+    display: none;
+  }
+}
+/*...............................................................................................
+		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+....................................................................................................*/
+
+@media only screen and (max-width: 767px) {
+  .nav_right {
+    display: none;
+  }
+  .selectLanguages {
+    display: none;
+  }
+  .lastButton {
+    display: none;
+  }
+  .fixed-bottom {
+    display: block;
+  }
+  .first-tab-first-row h3 {
+    margin-top: 2px;
+  }
+  .select-button {
+    margin-top: 2px;
+  }
+  .right_button2 {
+    position: absolute;
+    top: 30px;
+    right: 31px;
+    display: block;
+  }
+  .right_button3 {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    display: block;
+  }
+  .payLink {
+    position: absolute;
+    left: 60px;
+    top: -6px;
+    font-size: 12px;
+  }
+  .buttonThree a.btn1 {
+    width: 100%;
+  }
+  .buttonThree a.btn2 {
+    width: 100%;
+  }
+  .buttonThree a.btn3 {
+    width: 100%;
+  }
+  .rightContentWrap {
+    display: none;
+  }
+  .elementsWrap {
+    width: 50%;
+    float: left;
+  }
+  .elementsWrap2 {
+    float: right;
+  }
+  .HeadingWrap {
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .elementsWrap {
+    margin-bottom: 15px;
+  }
+  .nav-pills > li {
+    width: 21%;
+  }
+  .content-wrap .nav-pills li a {
+    padding: 8px 13px;
+  }
+  .node-wrap2 {
+    display: none;
+  }
+  .menu-node-wrap2 {
+    display: block;
+    margin-left: -5px;
+  }
+  .navbar .nodeWrap a {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+/*.........................personal layout for bottom menu........................*/
+/*...............................................................................................
+		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+....................................................................................................*/
+
+@media only screen and (max-width: 490px) {
+  .nav_right {
+    display: none;
+  }
+  .selectLanguages {
+    display: none;
+  }
+  .lastButton {
+    display: none;
+  }
+  .fixed-bottom {
+    display: block;
+  }
+  .first-tab-first-row h3 {
+    margin-top: 2px;
+  }
+  .select-button {
+    margin-top: 2px;
+  }
+  .right_button2 {
+    position: absolute;
+    top: 30px;
+    right: 31px;
+    display: none;
+  }
+  .right_button3 {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    display: none;
+  }
+  .payLink {
+    position: absolute;
+    left: 60px;
+    top: -6px;
+    font-size: 12px;
+  }
+  .buttonThree a.btn1 {
+    width: 100%;
+  }
+  .buttonThree a.btn2 {
+    width: 100%;
+  }
+  .buttonThree a.btn3 {
+    width: 100%;
+  }
+  .rightContentWrap {
+    display: none;
+  }
+  .elementsWrap {
+    width: 50%;
+    float: left;
+  }
+  .elementsWrap2 {
+    float: right;
+  }
+  .HeadingWrap {
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .elementsWrap {
+    margin-bottom: 15px;
+  }
+  .headingWrap {
+    float: none;
+    text-align: center;
+  }
+  .form-wrap {
+    float: none;
+  }
+  .nav-pills > li {
+    width: 100%;
+  }
+  .menu-node-wrap2 {
+    display: block;
+  }
+}
+/*.............................................................................................	
+	Wide Mobile Layout: 400px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+.................................................................................................*/
+@media only screen and (max-width: 400px) {
+  .nav_right {
+    display: none;
+  }
+  .selectLanguages {
+    display: none;
+  }
+  .lastButton {
+    display: none;
+  }
+  .fixed-bottom {
+    display: block;
+  }
+  .first-tab-first-row h3 {
+    margin-top: 2px;
+  }
+  .select-button {
+    margin-top: 2px;
+  }
+  .right_button2 {
+    position: absolute;
+    top: 30px;
+    right: 31px;
+    display: none;
+  }
+  .right_button3 {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    display: none;
+  }
+  .payLink {
+    position: absolute;
+    left: 60px;
+    top: -6px;
+    font-size: 12px;
+  }
+  .buttonThree a.btn1 {
+    width: 100%;
+  }
+  .buttonThree a.btn2 {
+    width: 100%;
+  }
+  .buttonThree a.btn3 {
+    width: 100%;
+  }
+  .rightContentWrap {
+    display: none;
+  }
+  .topTapContentWrap h3 {
+    float: none;
+  }
+  .topTapContentWrap h4 {
+    float: none;
+  }
+  .headingWrap {
+    float: none;
+    text-align: center;
+  }
+  .form-wrap {
+    float: none;
+  }
+  .nav-pills > li {
+    width: 100%;
+  }
+  .menu-node-wrap2 {
+    display: block;
+  }
+}
+/*.............................................................................................	
+	Wide Mobile Layout: 300px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+.................................................................................................*/
+@media only screen and (max-width: 350px) {
+  .elementsWrap {
+    float: none;
+    margin-bottom: 25px;
+  }
+  .elementsWrap2 {
+    float: none;
+  }
+  .headingWrap {
+    float: none;
+    text-align: center;
+  }
+  .form-wrap {
+    float: none;
+  }
+  .nav-pills > li {
+    width: 99%;
+  }
+  .menu-node-wrap2 {
+    display: block;
+  }
+}
+/*.............................................................................................	
+	Wide Mobile Layout: 300px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+.................................................................................................*/
+@media only screen and (max-width: 300px) {
+  .nav_right {
+    display: none;
+  }
+  .selectLanguages {
+    display: none;
+  }
+  .lastButton {
+    display: none;
+  }
+  .fixed-bottom {
+    display: block;
+  }
+  .first-tab-first-row h3 {
+    margin-top: 2px;
+  }
+  .select-button {
+    margin-top: 2px;
+  }
+  .right_button2 {
+    position: absolute;
+    top: 30px;
+    right: 31px;
+    display: none;
+  }
+  .right_button3 {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    display: none;
+  }
+  .payLink {
+    position: absolute;
+    left: 60px;
+    top: -6px;
+    font-size: 12px;
+  }
+  .buttonThree a.btn1 {
+    width: 100%;
+  }
+  .buttonThree a.btn2 {
+    width: 100%;
+  }
+  .buttonThree a.btn3 {
+    width: 100%;
+  }
+  .rightContentWrap {
+    display: none;
+  }
+  .topTapContentWrap h3 {
+    float: none;
+  }
+  .topTapContentWrap h4 {
+    float: none;
+  }
+  .elementsWrap {
+    float: none;
+    margin-bottom: 25px;
+  }
+  .elementsWrap2 {
+    float: none;
+  }
+  .headingWrap {
+    float: none;
+    text-align: center;
+  }
+  .form-wrap {
+    float: none;
+  }
+  .nav-pills > li {
+    width: 99%;
+  }
+  .menu-node-wrap2 {
+    display: block;
+  }
+}
+@media only screen and (max-width: 250px) {
+  .nav_right {
+    display: none;
+  }
+  .selectLanguages {
+    display: none;
+  }
+  .lastButton {
+    display: none;
+  }
+  .fixed-bottom {
+    display: block;
+  }
+  .first-tab-first-row h3 {
+    margin-top: 2px;
+  }
+  .select-button {
+    margin-top: 2px;
+  }
+  .right_button2 {
+    position: absolute;
+    top: 30px;
+    right: 31px;
+    display: none;
+  }
+  .right_button3 {
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    display: none;
+  }
+  .payLink {
+    position: absolute;
+    left: 60px;
+    top: -6px;
+    font-size: 12px;
+  }
+  .buttonThree a.btn1 {
+    width: 100%;
+  }
+  .buttonThree a.btn2 {
+    width: 100%;
+  }
+  .buttonThree a.btn3 {
+    width: 100%;
+  }
+  .rightContentWrap {
+    display: none;
+  }
+  .topTapContentWrap h3 {
+    float: none;
+  }
+  .topTapContentWrap h4 {
+    float: none;
+  }
+  .elementsWrap {
+    float: none;
+    margin-bottom: 25px;
+  }
+  .elementsWrap2 {
+    float: none;
+  }
+  .headingWrap {
+    float: none;
+    text-align: center;
+  }
+  .form-wrap {
+    float: none;
+  }
+  .nav-pills > li {
+    width: 99%;
+  }
+  .menu-node-wrap2 {
+    display: block;
+  }
+}
+/*..............................................................................................
+	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+...................................................................................................*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-device-pixel-ratio: 2) {
+  .nav_right {
+    display: none;
+  }
+  .selectLanguages {
+    display: none;
+  }
+  .lastButton {
+    display: none;
+  }
+  .fixed-bottom {
+    display: block;
+  }
+  .first-tab-first-row h3 {
+    margin-top: 2px;
+  }
+  .select-button {
+    margin-top: 2px;
+  }
+  .payLink {
+    position: absolute;
+    left: 60px;
+    top: -6px;
+    font-size: 12px;
+  }
+  .buttonThree a.btn1 {
+    width: 100%;
+  }
+  .buttonThree a.btn2 {
+    width: 100%;
+  }
+  .buttonThree a.btn3 {
+    width: 100%;
+  }
+  .rightContentWrap {
+    display: none;
+  }
+}
+/*..........Here end responsive.css file........*/

@@ -1,0 +1,548 @@
+<!--.....................................................
+		File Name: farm.html
+...................................................... -->
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<!-- basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!--Moble meta-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<title>Susi App</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<!--load google font -->
+		<link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap" rel="stylesheet">
+		
+		<!--load font aweresome icon all styles -->
+		<link href="css/all.css" rel="stylesheet"> 
+		
+		<!-- site icons -->
+		<link rel="icon" href="img/favicon.png" type="" />
+		
+		<!--bootstrap css-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<!-- Site css -->
+		<link rel="stylesheet" href="css/farm.css" />
+		<!-- responsive css -->
+		<link rel="stylesheet" href="css/responsive.css" />
+		
+	</head>
+	<body>
+		<!-- Menu start -->
+		<header>
+			<nav class="navbar navbar-expand-md">
+				<div class="container-fluid nav-container topNavbar">
+					<a href="#" class="navbar-brand">
+						<img src="img/mainLogo.png" alt="" class="img-fluid"/>
+					</a>
+					<button type="button" class="navbar-toggler togler_icon" data-target="#demo1" data-toggle="collapse"><i class="fas fa-bars"></i></button>
+					<div class="collapse navbar-collapse justify-content-left" id="demo1">
+						<ul class="navbar-nav"">
+							<li class="nav-item"><a href="index.html" class="nav-link active">Swap</a></li>
+							<li class="nav-item"><a href="pool.html" class="nav-link">Pool</a></li>
+							<li class="nav-item"><a href="migrate.html" class="nav-link">Migrate</a></li>
+							<li class="nav-item"><a href="#" class="nav-link">Farm</a></li>
+							<li class="nav-item"><a href="lend.html" class="nav-link">Lend</a></li>
+							<li class="nav-item"><a href="borrow.html" class="nav-link">Borrow</a></li>
+							<li class="nav-item"><a href="stake.html" class="nav-link">Stake</a></li>
+						</ul>
+						<div class="nodeWrap mr-2 menu-node-wrap2">
+							<a href="#" class="btn mb-3">Changes Nodes</a>
+						</div>
+					</div>
+					<div class="nodeWrap node-wrap2 mr-2">
+						<a href="#" class="btn">Changes Nodes</a>
+					</div>
+					<div class="nav_right">
+						<a href="" class="btn" data-toggle="modal" data-target="#exampleModal">Connect to a wallet</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+							    <div class="modal-header">
+									<h3 class="modal-title" id="exampleModalLabel">Select a Wallet</h3>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+							    </div>
+							    <div class="modal-body">
+									<ul >
+										<li><a href="#">Install Metamask <img src="img/1.png" alt=""class="ml-4" /></a></li>
+										<li><a href="#">Lattice <img src="img/3.png" alt=""class="ml-4" /></a></li>
+										<li><a href="#">Coinbase Wallet <img src="img/4.png" alt=""class="ml-4" /></a></li>
+										<li><a href="#">Fortmatic <img src="img/5.png" alt=""class="ml-4" /></a></li>
+										<li><a href="#">Portic <img src="img/6.png" alt=""class="ml-4" /></a></li>
+									</ul>
+							    </div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary">New to Ethereum?</button>
+									<button type="button" class="btn btn-primary">Learn more about wallets</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+					
+					<div class="dropdown lastButton">
+						<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+							<i class="fas fa-ellipsis-h"></i>
+						</button>
+						<div class="dropdown-menu topNavRight languageDropdown">
+							<a class="dropdown-item" href="#">Docs</a>
+							<a class="dropdown-item" href="#">Dev</a>
+							<a class="dropdown-item" href="#">Open Source</a>
+							<a class="dropdown-item" href="#">Tools</a>
+							<a class="dropdown-item" href="#">Discord </a>
+							<a class="dropdown-item" href="#">Vesting</a>
+						</div>
+					</div>
+					
+				</div>
+			</nav>
+		</header>	
+		<!-- Menu end -->
+		<!-- mobile Menu start -->
+		<div class="fixed-bottom">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="nav_right2 float-left">
+							<a href="" class="btn connect"data-toggle="modal" data-target="#exampleModal" >Connect to a wallet</a>
+						</div>
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h3 class="modal-title" id="exampleModalLabel">Select a Wallet</h3>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<ul >
+											<li><a href="#">Install Metamask <img src="img/1.png" alt=""class="ml-4" /></a></li>
+											<li><a href="#">Lattice <img src="img/3.png" alt=""class="ml-4" /></a></li>
+											<li><a href="#">Coinbase Wallet <img src="img/4.png" alt=""class="ml-4" /></a></li>
+											<li><a href="#">Fortmatic <img src="img/5.png" alt=""class="ml-4" /></a></li>
+											<li><a href="#">Portic <img src="img/6.png" alt=""class="ml-4" /></a></li>
+										</ul>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary">New to Ethereum?</button>
+										<button type="button" class="btn btn-primary">Learn more about wallets</button>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="dropdown lastButton2 float-right">
+							<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+								<i class="fas fa-ellipsis-h"></i>
+							</button>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Docs</a>
+								<a class="dropdown-item" href="#">Dev</a>
+								<a class="dropdown-item" href="#">Open Source</a>
+								<a class="dropdown-item" href="#">Tools</a>
+								<a class="dropdown-item" href="#">Discord </a>
+								<a class="dropdown-item" href="#">Vesting</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- mobile  Menu end -->
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-wrap">
+							<form action="">
+								<input type="text" placeholder="Search by symbol" class="w-100"/>
+								<a href="#" class="btn"><i class="fas fa-search"></i></a>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="content-wrap">
+							<div class="tab_content_btn">
+								<ul class="nav nav-pills">
+									<li class="active"><a class="btn" data-toggle="pill" href="#home">All Firms</a></li>
+									<li><a class="btn" data-toggle="pill" href="#menu1">Khasi Firms</a></li>
+									<li><a class="btn" data-toggle="pill" href="#menu2">SushiSwap Farms</a></li>
+									<li><a class="btn" data-toggle="pill" href="#menu3">2x Reward Farms</a></li>
+								</ul>
+							</div>	
+							<div class="middleText mt-5">
+								<h4>Farms</h4>
+								<hr />
+							</div>
+							<div class="tab-content">
+								<div id="home" class="tab-pane fade in active">
+									<div class="bottomTableWrap">
+										<div class="table-responsive-md">
+											<table class="table mainTable">
+												<thead>
+													<tr>
+														<th><a href="#" class="table_Item">Pool</a></th>
+														<th><a href="#" class="table_Item">TVL</a></th>
+														<th><a href="#" class="table_Item">Rewards</a></th>
+														<th><a href="#" class="table_Item">APR</a></th>
+													</tr>
+												</thead>
+												<tbody>
+													
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>DUSD/WETH</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 106,853</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>8.710 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>26.99%</span>
+														</td>
+														
+													</tr>
+													
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>ALPHA/WETH</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 5,981,796</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>56.10 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>31.14%</span>
+														</td>
+														
+													</tr>
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>TRU/WETH</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 870,865</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>129.5 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>49.68%</span>
+														</td>
+														
+													</tr>
+												</tbody>											
+											</table>
+										</div>
+									</div>
+								</div>
+								<div id="menu1" class="tab-pane fade">
+									<div class="bottomTableWrap">
+										<div class="table-responsive-md">
+											<table class="table mainTable">
+												<thead>
+													<tr>
+														<th><a href="#" class="table_Item">Pool</a></th>
+														<th><a href="#" class="table_Item">TVL</a></th>
+														<th><a href="#" class="table_Item">Rewards</a></th>
+														<th><a href="#" class="table_Item">APR</a></th>
+													</tr>
+												</thead>
+												<tbody>
+													
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>WETH/CRETH2</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 4,217,757</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>8.710 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>43.15%</span>
+														</td>
+														
+													</tr>
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>ALPHA/WETH</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 5,981,796</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>56.10 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>31.14%</span>
+														</td>
+														
+													</tr>
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>DUSD/WETH</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 106,853</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>8.710 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>26.99%</span>
+														</td>
+														
+													</tr>
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>TRU/WETH</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 870,865</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>129.5 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>49.68%</span>
+														</td>
+														
+													</tr>
+												</tbody>											
+											</table>
+										</div>
+									</div>
+								</div>
+								<div id="menu2" class="tab-pane fade">
+									<div class="bottomTableWrap">
+										<div class="table-responsive-md">
+											<table class="table mainTable">
+												<thead>
+													<tr>
+														<th><a href="#" class="table_Item">Pool</a></th>
+														<th><a href="#" class="table_Item">TVL</a></th>
+														<th><a href="#" class="table_Item">Rewards</a></th>
+														<th><a href="#" class="table_Item">APR</a></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>DUSD/WETH</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 106,853</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>8.710 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>26.99%</span>
+														</td>
+														
+													</tr>
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>WETH/CRETH2</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 4,217,757</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>8.710 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>43.15%</span>
+														</td>
+														
+													</tr>
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>ALPHA/WETH</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 5,981,796</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>56.10 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>31.14%</span>
+														</td>
+														
+													</tr>
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>TRU/WETH</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 870,865</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>129.5 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>49.68%</span>
+														</td>
+														
+													</tr>
+												</tbody>											
+											</table>
+										</div>
+									</div>
+								</div>
+								<div id="menu3" class="tab-pane fade">
+									<div class="bottomTableWrap">
+										<div class="table-responsive-md">
+											<table class="table mainTable">
+												<thead>
+													<tr>
+														<th><a href="#" class="table_Item">Pool</a></th>
+														<th><a href="#" class="table_Item">TVL</a></th>
+														<th><a href="#" class="table_Item">Rewards</a></th>
+														<th><a href="#" class="table_Item">APR</a></th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>ALPHA/WETH</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 5,981,796</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>56.10 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>31.14%</span>
+														</td>
+														
+													</tr>
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>TRU/WETH</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 870,865</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>129.5 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>49.68%</span>
+														</td>
+														
+													</tr>
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>DUSD/WETH</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 106,853</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>8.710 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>26.99%</span>
+														</td>
+														
+													</tr>
+													<tr class="firstRow">
+														<td>
+															<img src="img/farm1.png" alt="" class="img-fluid imageFirst" />
+															<img src="img/1.jpg" alt="" class="img-fluid imageSecond mr-2" />
+															<span>WETH/CRETH2</span>
+														</td>	
+														<td><i class="fas fa-dollar-sign"></i> 4,217,757</td>
+														<td>
+															<img src="img/third.jpg" alt="" class="img-fluid imageSecond2 mr-2" />
+															<span>8.710 SUSHI/DAY</span>
+														</td>
+														<td>
+															<span>43.15%</span>
+														</td>
+														
+													</tr>
+													
+												</tbody>											
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>	
+						
+						</div><!--contentwrap-->
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- footer  section start -->
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="button-wrap">
+							<a href="#" class="btn float-left">Analytics</a>
+							<a href="#" class="btn float-right">12887272</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer  section end -->	
+		<!-- JS, Popper.js, and jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		
+		
+		
+	</body>
+</html>
+<!--...................End Here farm.html File......... -->

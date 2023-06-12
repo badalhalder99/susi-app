@@ -1,0 +1,770 @@
+<!--.....................................................
+		File Name: index.html
+...................................................... -->
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--Moble meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <title>Susi App</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!--load google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Peddana&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--load font aweresome icon all styles -->
+    <link href="css/all.css" rel="stylesheet" />
+
+    <!-- site icons -->
+    <link rel="icon" href="img/favicon.png" />
+
+    <!--bootstrap css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Site css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Menu start -->
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid nav-container topNavbar">
+          <a href="#" class="navbar-brand">
+            <img src="img/mainLogo.png" alt="" class="img-fluid" />
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler togler_icon"
+            data-target="#demo1"
+            data-toggle="collapse"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse justify-content-left" id="demo1">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">Swap</a>
+              </li>
+              <li class="nav-item">
+                <a href="pool.html" class="nav-link">Pool</a>
+              </li>
+              <li class="nav-item">
+                <a href="migrate.html" class="nav-link">Migrate</a>
+              </li>
+              <li class="nav-item">
+                <a href="farm.html" class="nav-link">Farm</a>
+              </li>
+              <li class="nav-item">
+                <a href="lend.html" class="nav-link">Lend</a>
+              </li>
+              <li class="nav-item">
+                <a href="borrow.html" class="nav-link">Borrow</a>
+              </li>
+              <li class="nav-item">
+                <a href="stake.html" class="nav-link">Stake</a>
+              </li>
+            </ul>
+            <div class="nodeWrap mr-2 menu-node-wrap2">
+              <a href="#" class="btn mb-3">Changes Nodes</a>
+            </div>
+          </div>
+          <div class="nodeWrap node-wrap2 mr-2">
+            <a href="#" class="btn">Changes Nodes</a>
+          </div>
+          <div class="nav_right">
+            <a
+              href="#"
+              class="btn"
+              data-toggle="modal"
+              data-target="#exampleModal5"
+              >Connect to a wallet</a
+            >
+          </div>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">
+                    Select a token
+                  </h3>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body modal-main">
+                  <input
+                    type="text"
+                    placeholder="Search by symbol"
+                    class="mt-2 w-100 mb-4 modal-input"
+                  />
+                  <h4
+                    class="mt-4 mb-4"
+                    data-toggle="tooltip"
+                    title="This tokens are commonly pare with others tokens"
+                  >
+                    Common Bases <i class="fas fa-question-circle question"></i>
+                  </h4>
+                  <div class="btn-wrap-all">
+                    <a href="#" class="btn">WETH</a>
+                    <a href="#" class="btn">DAI</a>
+                    <a href="#" class="btn">USDC</a>
+                    <a href="#" class="btn">USDT</a>
+                    <a href="#" class="btn">WBTC</a>
+                    <a href="#" class="btn">OLYMPUC</a>
+                    <a href="#" class="btn">SUSHI</a>
+                    <a href="#" class="btn">ETH</a>
+                    <a href="#" class="btn">1INCH</a>
+                    <a href="#" class="btn">AAVE</a>
+                    <a href="#" class="btn">AKRO</a>
+                    <a href="#" class="btn">cyBUSD</a>
+                    <a href="#" class="btn">AGLD</a>
+                    <a href="#" class="btn">CRV</a>
+                    <a href="#" class="btn">CTX</a>
+                    <a href="#" class="btn">CRO</a>
+                  </div>
+                </div>
+                <div class="modal-footer" style="justify-content: center">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    style="font-size: 15px; padding: 10px 30px"
+                  >
+                    Manage Token Lists
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal 2-->
+          <div
+            class="modal fade"
+            id="exampleModal5"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel5"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel5">
+                    Select a Wallet
+                  </h3>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        >Install Metamask
+                        <img src="img/1.png" alt="" class="ml-4"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Lattice <img src="img/3.png" alt="" class="ml-4"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Coinbase Wallet
+                        <img src="img/4.png" alt="" class="ml-4"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Fortmatic <img src="img/5.png" alt="" class="ml-4"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Portic <img src="img/6.png" alt="" class="ml-4"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary">
+                    New to Ethereum?
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Learn more about wallets
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown lastButton">
+            <button
+              type="button"
+              class="btn dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+            <div class="dropdown-menu topNavRight languageDropdown">
+              <a class="dropdown-item" href="#">Docs</a>
+              <a class="dropdown-item" href="#">Dev</a>
+              <a class="dropdown-item" href="#">Open Source</a>
+              <a class="dropdown-item" href="#">Tools</a>
+              <a class="dropdown-item" href="#">Discord </a>
+              <a class="dropdown-item" href="#">Vesting</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Menu end -->
+    <!-- mobile Menu start -->
+    <div class="fixed-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="nav_right2 float-left">
+              <a
+                href=""
+                class="btn connect"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                >Connect to a wallet</a
+              >
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel6"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel6">
+                      Select a Wallet
+                    </h3>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          >Install Metamask
+                          <img src="img/1.png" alt="" class="ml-4"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Lattice <img src="img/3.png" alt="" class="ml-4"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Coinbase Wallet
+                          <img src="img/4.png" alt="" class="ml-4"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Fortmatic <img src="img/5.png" alt="" class="ml-4"
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Portic <img src="img/6.png" alt="" class="ml-4"
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary">
+                      New to Ethereum?
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Learn more about wallets
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown lastButton2 float-right">
+              <button
+                type="button"
+                class="btn dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                <i class="fas fa-ellipsis-h"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Docs</a>
+                <a class="dropdown-item" href="#">Dev</a>
+                <a class="dropdown-item" href="#">Open Source</a>
+                <a class="dropdown-item" href="#">Tools</a>
+                <a class="dropdown-item" href="#">Discord </a>
+                <a class="dropdown-item" href="#">Vesting</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile  Menu end -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="left-animate-text-wrap">
+              <div class="patterns">
+                <svg width="100%" height="100%">
+                  <defs>
+                    <pattern
+                      id="polka-dots"
+                      x="0"
+                      y="0"
+                      width="100"
+                      height="100"
+                      patternUnits="userSpaceOnUse"
+                    >
+                      <circle fill="#be9ddf" cx="" cy="" r=""></circle>
+                    </pattern>
+                    <style>
+                      @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+                    </style>
+                  </defs>
+
+                  <rect
+                    x="0"
+                    y="0"
+                    width="100%"
+                    height="100%"
+                    fill="url(#polka-dots)"
+                  ></rect>
+                  <text x="50%" y="40%" text-anchor="middle">ACX</text>
+
+                  <!-- Decen ralizing Fin    -->
+                </svg>
+              </div>
+              <div class="patterns">
+                <svg width="100%" height="100%">
+                  <defs>
+                    <pattern
+                      id="polka-dots1"
+                      x="0"
+                      y="0"
+                      width="100"
+                      height="100"
+                      patternUnits="userSpaceOnUse"
+                    >
+                      <circle fill="#be9ddf" cx="" cy="" r=""></circle>
+                    </pattern>
+                    <style>
+                      @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+                    </style>
+                  </defs>
+
+                  <rect
+                    x="0"
+                    y="0"
+                    width="100%"
+                    height="100%"
+                    fill="url(#polka-dots1)"
+                  ></rect>
+                  <text x="50%" y="40%" text-anchor="middle">
+                    Decentralizing
+                  </text>
+
+                  <!-- Decentralizing Finance-->
+                </svg>
+              </div>
+              <div class="patterns">
+                <svg width="100%" height="100%">
+                  <defs>
+                    <pattern
+                      id="polka-dots2"
+                      x="0"
+                      y="0"
+                      width="100"
+                      height="100"
+                      patternUnits="userSpaceOnUse"
+                    >
+                      <circle fill="#be9ddf" cx="" cy="" r=""></circle>
+                    </pattern>
+                    <style>
+                      @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+                    </style>
+                  </defs>
+
+                  <rect
+                    x="0"
+                    y="0"
+                    width="100%"
+                    height="100%"
+                    fill="url(#polka-dots2)"
+                  ></rect>
+                  <text x="50%" y="40%" text-anchor="middle">Finance</text>
+
+                  <!-- Decentralizing Finance-->
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="content-wrap">
+              <div class="tab_content_btn">
+                <ul class="nav nav-pills">
+                  <li class="active">
+                    <a class="btn" data-toggle="pill" href="#home">Swap</a>
+                  </li>
+                  <li>
+                    <a class="btn" data-toggle="pill" href="#menu1">Limit</a>
+                  </li>
+                  <li>
+                    <a class="btn" data-toggle="pill" href="#menu2"
+                      >Liquidity</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="right_button2">
+                <a href="#" class="btn"><i class="fas fa-sliders-h"></i></a>
+              </div>
+              <div class="right_button3">
+                <a href="#" class="btn"
+                  ><i class="fas fa-mobile-alt mr-2"></i>15.8</a
+                >
+              </div>
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                  <div
+                    class="first-tab-first-row thirdRow mt-4 pay-btn payElement"
+                  >
+                    <img src="img/1.jpg" alt="" class="img-fluid" />
+                    <a class="btn payLink" style="color: #efe5e573"
+                      >Swap From</a
+                    >
+                    <a
+                      href="#"
+                      class="btn select-button"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      >Select Token</a
+                    >
+                    <form action="">
+                      <input type="text" placeholder="0.0" class="w-50" />
+                    </form>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="firstrowmiddle">
+                    <a href="#" class="btn"
+                      ><i class="fas fa-long-arrow-alt-down"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="first-tab-first-row thirdRow mt-2 pay-btn payElement"
+                  >
+                    <img src="img/1.jpg" alt="" class="img-fluid" />
+                    <a class="btn payLink" style="color: #efe5e573"
+                      >Swap To(est)</a
+                    >
+                    <a
+                      href="#"
+                      class="btn select-button"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      >Select Token</a
+                    >
+                    <form action="">
+                      <input type="text" placeholder="0.0" class="w-50" />
+                    </form>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="bottomSelectButton">
+                    <a
+                      href="#"
+                      class="btn"
+                      data-toggle="modal"
+                      data-target="#exampleModal5"
+                      >Connect to a wallet</a
+                    >
+                  </div>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                  <div class="top-content">
+                    <ul class="list-inline ml-4">
+                      <li class="list-inline-item">
+                        <span class="firstItem">Pay from:</span>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="secondItem">BentoBox</span>
+                      </li>
+                      <li class="list-inline-item">
+                        <label class="switch">
+                          <input type="checkbox" checked />
+                          <span class="slider round"></span>
+                        </label>
+                      </li>
+                      <li class="list-inline-item">
+                        <span class="thirdItem">Wallet</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    class="first-tab-first-row thirdRow mt-2 pay-btn payElement"
+                  >
+                    <img src="img/1.jpg" alt="" class="img-fluid" />
+                    <a class="btn payLink" style="color: #efe5e573">You pay</a>
+                    <a
+                      href="#"
+                      class="btn select-button"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      >Select Token</a
+                    >
+                    <form action="">
+                      <input type="text" placeholder="Max 0.0" class="w-50" />
+                    </form>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="payBottom">
+                    <p class="float-left mb-2 ml-2">
+                      <b>In Bento: </b> <span> 0 ETH</span>
+                    </p>
+                    <p class="float-right mb-2 mr-2">
+                      <b>In Bento: </b> <span> ETH</span>
+                    </p>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="firstrowmiddle">
+                    <a href="#" class="btn"
+                      ><i class="fas fa-long-arrow-alt-down"></i
+                    ></a>
+                  </div>
+
+                  <div class="first-tab-first-row thirdRow mt-2 pay-btn">
+                    <img src="img/1.jpg" alt="" class="img-fluid" />
+                    <a class="btn payLink" style="color: #efe5e573"
+                      >You receive</a
+                    >
+                    <a
+                      href="#"
+                      class="btn select-button"
+                      data-toggle="modal"
+                      data-target="#exampleModal5"
+                      >Select Token</a
+                    >
+                    <form action="">
+                      <input type="text" placeholder="0.0" class="w-50" />
+                    </form>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="expiration-wrap">
+                    <div class="order">
+                      <span>Order Expiration:</span>
+                    </div>
+                    <div class="dropdown dropdownButton">
+                      <button
+                        class="btn btn-secondary dropdown-toggle firstBtn"
+                        type="button"
+                        id="dropdownMenuButton"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Never
+                      </button>
+                      <div
+                        class="dropdown-menu dropdownMenu"
+                        aria-labelledby="dropdownMenuButton"
+                      >
+                        <a class="dropdown-item" href="#">Never</a>
+                        <a class="dropdown-item" href="#">1 Hours</a>
+                        <a class="dropdown-item" href="#">24 Hours</a>
+                        <a class="dropdown-item" href="#">1 Week</a>
+                        <a class="dropdown-item" href="#">30 Days</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bottomSelectButton1">
+                    <a
+                      href="#"
+                      class="btn"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      >Connect to a wallet</a
+                    >
+                  </div>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                  <div
+                    class="first-tab-first-row thirdRow mt-4 pay-btn payElement"
+                  >
+                    <img src="img/1.jpg" alt="" class="img-fluid" />
+                    <a class="btn payLink" style="color: #efe5e573">Input</a>
+                    <a
+                      href="#"
+                      class="btn select-button"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      >Select Token</a
+                    >
+                    <form action="">
+                      <input type="text" placeholder="0.0" class="w-50" />
+                    </form>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="firstrowmiddle">
+                    <a href="#" class="btn"
+                      ><i class="fas fa-long-arrow-alt-down"></i
+                    ></a>
+                  </div>
+                  <div
+                    class="first-tab-first-row thirdRow mt-2 pay-btn payElement"
+                  >
+                    <img src="img/1.jpg" alt="" class="img-fluid" />
+                    <a class="btn payLink" style="color: #efe5e573">Input</a>
+                    <a
+                      href="#"
+                      class="btn select-button"
+                      data-toggle="modal"
+                      data-target="#exampleModal5"
+                      >Select Token</a
+                    >
+                    <form action="">
+                      <input type="text" placeholder="0.0" class="w-50" />
+                    </form>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="bottomSelectButton">
+                    <a
+                      href="#"
+                      class="btn"
+                      data-toggle="modal"
+                      data-target="#exampleModal"
+                      >Connect to a wallet</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--contentwrap-->
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </section>
+    <!-- footer  section start -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="button-wrap">
+              <a href="#" class="btn float-left" style="color: #ddddddd1"
+                >Analytics</a
+              >
+              <a href="#" class="btn float-right" style="color: #ddddddd1"
+                >12887272</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer  section end -->
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </body>
+</html>
+<!--...................End Here index.html File......... -->
